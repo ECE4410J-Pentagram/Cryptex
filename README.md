@@ -4,7 +4,7 @@ The entire project consists of two parts: [frontend](https://github.com/ECE4410J
 
 ## View UI/UX
 
-## Team Roster
+## Individual Contribution
 
 - Baichuan Li: Server Backend \& API Design
 - Che Chen: Text-Based Encryption
