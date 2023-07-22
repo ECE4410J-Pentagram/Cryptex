@@ -7,6 +7,7 @@ The entire project consists of two parts: [frontend](https://github.com/ECE4410J
 ## Individual Contribution
 
 ### Baichun Li
+Contributed part of the frontend system (including the key management part). Worked on the entire backend system, designed the Postgres SQL table structure and designed the entire API structure.
 
 ### Che Chen
 
