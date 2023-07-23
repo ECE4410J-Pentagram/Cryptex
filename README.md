@@ -26,3 +26,4 @@ Sources:
 
 ### Yiwen Yang
 
+Implemented frontend message sending and sharing logic. Designed and implemented QR Code sharing and frontend friend invitation process. Desgined and managed client side database and secure key storage. Designed encryption and decryption key generation. Connected frontend to backend using REST API.
