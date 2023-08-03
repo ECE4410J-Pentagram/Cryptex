@@ -6,12 +6,18 @@ The entire project consists of two parts: [frontend](https://github.com/ECE4410J
 
 - Baichun Li: Contributed part of the frontend system (including the key management part). Worked on the entire backend system, designed the Postgres SQL table structure, and designed the entire API structure.
 - Che Chen: 
-- Pingbang Hu: Researched and implemented the *text2image Steganography algorithm*. Design the pseudo-randomized LSB (Least Significant Bit) Embedding algorithm with the RSA. Proving the algorithm is secure at the theoretical level.
+- Pingbang Hu: Researched and implemented the *text2image Steganography algorithm* ([core](https://github.com/ECE4410J-Pentagram/Pentagram-Frontend/tree/main/app/src/main/java/cn/edu/sjtu/patrickli/cryptex/model/core)): Identifying the potential pitfall of the common [Image Steganography](https://github.com/aagarwal1012/Image-Steganography-Library-Android) library for Android and designing the improved *pseudo-randomized LSB* Embedding algorithm with RSA encryption. 
+
+  Proved the proposed *PR-LSB Embedding algorithm* is secure at the theoretical level, and analyzed various properties of which.
 - Jiajun Wang: 
 - Siwei Wang: 
 - Yiwen Yang: Implemented frontend message sending and sharing logic. Designed and implemented QR Code sharing and frontend friend invitation process. Designed and managed client-side database and secure key storage. Designed encryption and decryption key generation. Connected frontend to backend using REST API.
 
 ### Challenges
+
+#### The Pseudo-Randomized LSB Embedding Algorithm
+
+
 
 ## Getting Started
 
