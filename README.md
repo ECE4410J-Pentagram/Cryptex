@@ -1,29 +1,29 @@
 # Cryptex
 
-The entire project consists of two parts: [frontend](https://github.com/ECE4410J-Pentagram/Pentagram-Frontend) and [backend](https://github.com/ECE4410J-Pentagram/Pentagram-Backend). 
+The entire project consists of two parts: [frontend](https://github.com/ECE4410J-Pentagram/Pentagram-Frontend) and [backend](https://github.com/ECE4410J-Pentagram/Pentagram-Backend).
 
-## View UI/UX
+## Team Roster
 
-## Individual Contribution
+- Baichun Li: Contributed part of the frontend system (including the key management part). Worked on the entire backend system, designed the Postgres SQL table structure, and designed the entire API structure.
+- Che Chen: 
+- Pingbang Hu: Researched and implemented the *text2image Steganography algorithm*. Design the pseudo-randomized LSB (Least Significant Bit) Embedding algorithm with the RSA. Proving the algorithm is secure at the theoretical level.
+- Jiajun Wang: 
+- Siwei Wang: 
+- Yiwen Yang: Implemented frontend message sending and sharing logic. Designed and implemented QR Code sharing and frontend friend invitation process. Designed and managed client-side database and secure key storage. Designed encryption and decryption key generation. Connected frontend to backend using REST API.
 
-### Baichun Li
-Contributed part of the frontend system (including the key management part). Worked on the entire backend system, designed the Postgres SQL table structure and designed the entire API structure.
+### Challenges
 
-### Che Chen
+## Getting Started
 
-### Pingbang Hu
+> **how to build and run your project (25%)**. Describe how to build and run your app. Include instructions on how to incorporate any 3rd party SDKs/APIs your app depends on. Users should be able to clone and build your project based solely on your Getting Started section without any hand-holding from you.
+>
+> Your IDE project must build, with all 3rd party SDKs/APIs dependencies included. If you rely on any iOS/Android SDK that requires a separate installation process, be sure to include instructions to install it. Provide instructions on how to setup your back end also.  And provide a complete list of all third party libraries, SDKs, and tools your project relies on **directly**. (That is, you don't need to list libraries that are installed automatically when installing the libraries you rely on directly.)
+>
+> You can assume that the reader has completed all the labs in the course and you don't need to provide instructions on how to set up a server, PostgreSQL, Django.  You can simply link to the relevant sections of the relevant labs. However, for tools not covered in the labs, such as Firebase or Flask, please do provide instructions on how to set them up, or **provide a link to the setup instructions you have used and/or found most useful**.
 
-Researched the *text2image Steganography algorithm*. Design the pseudo-randomized LSB (Least Significant Bit) Embedding algorithm with the private key. Proving the algorithm is secure at the theoretical level (i.e., based on common cryptography premises). Characterize the image distortion under the proposed algorithm.
+## Model and Engine
 
-Sources:
+## APIs and Controller
 
-1. [aagarwal1012/Image-Steganography-Library-Android](https://github.com/aagarwal1012/Image-Steganography-Library-Android)
-2. [Cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+## View and UI/UX
 
-### Jiajun Wang
-
-### Siwei Wang
-
-### Yiwen Yang
-
-Implemented frontend message sending and sharing logic. Designed and implemented QR Code sharing and frontend friend invitation process. Desgined and managed client side database and secure key storage. Designed encryption and decryption key generation. Connected frontend to backend using REST API.
