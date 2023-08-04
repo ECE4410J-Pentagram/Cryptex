@@ -42,6 +42,9 @@ class RequestStore {
 ```
 
 ### Backend
+
+We provide a default official server at `https://cryptex.software/api/` but you can also set up a private server if you want.
+
 Please note our service depends on Redis and PostgresDB.
 
 #### Development Environment Setup
@@ -124,6 +127,8 @@ docker compose up -d
 ## Model and Engine
 
 ## APIs and Controller
+
+The API definitions are provided with ReDoc at our [Official Server](https://cryptex.software/api/docs).
 
 ## View and UI/UX
 
