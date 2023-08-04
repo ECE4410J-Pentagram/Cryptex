@@ -46,6 +46,7 @@ Please note our service depends on Redis and PostgresDB.
 
 #### Development Environment Setup
 - Bare-metal Service (Development Mode)
+
 Clone the repository:
 ```bash
 git clone git@github.com:ECE4410J-Pentagram/Cryptex.git
@@ -87,6 +88,7 @@ You can also add `ENV=dev` to make sure that the system runs in development mode
 
 
 - Using Docker (Production Build)
+
 Pull the docker image from ghcr.
 ```bash
 docker pull ghcr.io/ece4410j-pentagram/pentagram-backend
@@ -99,6 +101,7 @@ docker run --rm -it -p 8000:8000 --env-file secret.env ghcr.io/ece4410j-pentagra
 **Note:** If you need to initialize the database table structure, do not forget to run `python3 createDB.py` inside the container. It is not automatic.
 
 - Using Docker Compose (Production Build)
+
 Create a file called `docker-compose.yml`. Edit the file and input:
 ```yaml
 version: '3.7'
