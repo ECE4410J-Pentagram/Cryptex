@@ -27,6 +27,22 @@ The entire project consists of two parts: [frontend](https://github.com/ECE4410J
 >
 > You can assume that the reader has completed all the labs in the course and you don't need to provide instructions on how to set up a server, PostgreSQL, Django.  You can simply link to the relevant sections of the relevant labs. However, for tools not covered in the labs, such as Firebase or Flask, please do provide instructions on how to set them up, or **provide a link to the setup instructions you have used and/or found most useful**.
 
+### Frontend
+
+Clone the frontend code from [Pentagram-Frontend](https://github.com/ECE4410J-Pentagram/Pentagram-Frontend):
+```bash
+git clone git@github.com:ECE4410J-Pentagram/Pentagram-Frontend.git
+```
+
+In your [Android Studio](https://developer.android.com/studio), open project `Pentagram-Frontend`. Our project use [Groovy Gradle](https://developer.android.com/studio/build) as the build tool, and you can easily build the app in Android studio by clicking `run` button. You can use our server (which is by default) directly, or you may set up your own server by following steps [here](#backend). If you want to use your own server, make sure to modify `apiUrl` in `app/src/main/java/cn/edu/sjtu/patrickli/cryptex/model/RequestStore.kt`:
+```kotlin
+class RequestStore {
+    private val apiUrl = "https://example.com/api/"
+}
+```
+
+### Backend
+
 ## Model and Engine
 
 ## APIs and Controller
