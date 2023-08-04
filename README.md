@@ -52,7 +52,7 @@ Please note our service depends on Redis and PostgresDB.
 
 Clone the repository:
 ```bash
-git clone git@github.com:ECE4410J-Pentagram/Cryptex.git
+git clone git@github.com:ECE4410J-Pentagram/Pentagram-Backend.git
 ```
 
 Start a development mode Redis and a PostgresDB:
