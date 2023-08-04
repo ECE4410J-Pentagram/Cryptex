@@ -15,8 +15,11 @@ The entire project consists of two parts: [frontend](https://github.com/ECE4410J
 
 ### Challenges
 
-#### The Pseudo-Randomized LSB Embedding Algorithm
-During the app development process, our team encountered several challenges, with one major hurdle being the decision regarding the inclusion of a shortcut menu. Initially, we had invested a considerable amount of effort in developing and implementing the shortcut menu feature. However, as the development progressed, we realized the necessity of saved contacts in the backend for a seamless user experience. This realization led us to an extensive discussion within the team to evaluate the trade-offs and potential impact on the overall functionality and user satisfaction. After careful consideration, we made the difficult choice to pivot and prioritize the development of saved contacts over the shortcut menu. This decision required additional effort to restructure and adapt the existing codebase, but we believe it was the right move in ensuring a more robust and user-friendly app.
+#### Pseudo-Randomized LSB Embedding Algorithm
+
+#### Shortcut Menu
+
+During the app development process, our team encountered several challenges, with one major hurdle being the decision regarding the inclusion of a shortcut menu. Initially, we had invested a considerable amount of effort in developing and implementing the shortcut menu feature. However, as the development progressed, we realized the necessity of saved contacts in the backend for a seamless user experience. This realization led us to an extensive discussion within the team to evaluate the trade-offs and potential impact on the overall functionality and user satisfaction. After careful consideration, we made the difficult choice to pivot and prioritize the development of saved contacts over the shortcut menu. This decision required additional effort to restructure and adapt the existing codebase, but we believe it was the right move to ensure a more robust and user-friendly app.
 
 
 ## Getting Started
@@ -34,7 +37,7 @@ Clone the frontend code from [Pentagram-Frontend](https://github.com/ECE4410J-Pe
 git clone git@github.com:ECE4410J-Pentagram/Pentagram-Frontend.git
 ```
 
-In your [Android Studio](https://developer.android.com/studio), open project `Pentagram-Frontend`. Our project use [Groovy Gradle](https://developer.android.com/studio/build) as the build tool, and you can easily build the app in Android studio by clicking `run` button. You can use our server (which is by default) directly, or you may set up your own server by following steps [here](#backend). If you want to use your own server, make sure to modify `apiUrl` in `app/src/main/java/cn/edu/sjtu/patrickli/cryptex/model/RequestStore.kt`:
+In your [Android Studio](https://developer.android.com/studio), open the project `Pentagram-Frontend`. Our project uses [Groovy Gradle](https://developer.android.com/studio/build) as the build tool, and you can easily build the app in Android Studio by clicking the `run` button. You can use our server (which is by default) directly, or you may set up your own server by following steps [here](#backend). If you want to use your own server, make sure to modify `apiUrl` in `app/src/main/java/cn/edu/sjtu/patrickli/cryptex/model/RequestStore.kt`:
 ```kotlin
 class RequestStore {
     private val apiUrl = "https://example.com/api/"
@@ -49,5 +52,5 @@ class RequestStore {
 
 ## View and UI/UX
 
-We decided to use a relatively concise UI design following our designed workflow and presenting our functions to the customers. Based on the mockup usability test results, the users want clearer instructions of their next steps and our final UI enables them to encrypt and decrypt the desired text step by step without confusions. We also applied different modes including auto, day and night mode. This also caters to the needs of users mentioned in the mockup usability test.
+We decided to use a relatively concise UI design following our designed workflow and presenting our functions to the customers. Based on the mockup usability test results, the users want clearer instructions for their next steps, and our final UI enables them to encrypt and decrypt the desired text step by step without confusion. We also applied different modes, including auto, day, and night mode. This also caters to the needs of users mentioned in the mockup usability test.
 
