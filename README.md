@@ -10,14 +10,10 @@ The entire project consists of two parts: [frontend](https://github.com/ECE4410J
 
   Proved the proposed *PR-LSB Embedding algorithm* is secure at the theoretical level, and analyzed various properties of which.
 - Jiajun Wang: 
-- Siwei Wang: Completed part of the codes for UI of Skeletal Demo. Contributed to project presentations and proposal. Led story map and workflow creation. Designed Figma interface. Presented Skeletal Demo and MVP Demo. Drafted 12 pages of the thesis.
+- Siwei Wang: Completed part of the codes for the UI of Skeletal Demo. Contributed to project presentations and proposals. Led story map and workflow creation. Designed Figma interface. Presented Skeletal Demo and MVP Demo. Drafted 12 pages of the thesis.
 - Yiwen Yang: Implemented frontend message sending and sharing logic. Designed and implemented QR Code sharing and frontend friend invitation process. Designed and managed client-side database and secure key storage. Designed encryption and decryption key generation. Connected frontend to backend using REST API.
 
 ### Challenges
-
-#### Pseudo-Randomized LSB Embedding Algorithm
-
-#### Shortcut Menu
 
 During the app development process, our team encountered several challenges, with one major hurdle being the decision regarding the inclusion of a shortcut menu. Initially, we had invested a considerable amount of effort in developing and implementing the shortcut menu feature. However, as the development progressed, we realized the necessity of saved contacts in the backend for a seamless user experience. This realization led us to an extensive discussion within the team to evaluate the trade-offs and potential impact on the overall functionality and user satisfaction. After careful consideration, we made the difficult choice to pivot and prioritize the development of saved contacts over the shortcut menu. This decision required additional effort to restructure and adapt the existing codebase, but we believe it was the right move to ensure a more robust and user-friendly app.
 
