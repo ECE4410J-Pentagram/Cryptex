@@ -42,6 +42,81 @@ class RequestStore {
 ```
 
 ### Backend
+Please note our service depends on Redis and PostgresDB.
+
+#### Development Environment Setup
+- Bare-metal Service (Development Mode)
+Clone the repository:
+```bash
+git clone git@github.com:ECE4410J-Pentagram/Cryptex.git
+```
+
+Start a development mode Redis and a PostgresDB:
+```bash
+docker compose -f dev_db/docker-compose.yml up -d
+```
+
+Prepare the environment:
+```bash
+pip3 install -r requirements.txt
+```
+
+Set up the PostgresDB tables:
+```bash
+python3 createDB.py
+```
+
+Start the server:
+```bash
+python3 -m uvicorn app:app
+```
+
+#### Production Environment Setup
+Before you start our service, you need to setup a PostgresDB and a Redis. You need to keep your database and Redis credentials in `secret.env` file:
+```
+POSTGRES_USER=XXXXX
+POSTGRES_PASSWORD=XXXXX
+POSTGRES_DB=XXXXX
+POSTGRES_HOST=XXXXX
+POSTGRES_PORT=XXXXX
+REDIS_HOST=XXXXX
+REDIS_USERNAME=XXXXX
+REDIS_PASSWORD=XXXXX
+```
+You can also add `ENV=dev` to make sure that the system runs in development mode. By default, the environment variable is set to `ENV=prod`.
+
+
+- Using Docker (Production Build)
+Pull the docker image from ghcr.
+```bash
+docker pull ghcr.io/ece4410j-pentagram/pentagram-backend
+```
+
+Start the container.
+```bash
+docker run --rm -it -p 8000:8000 --env-file secret.env ghcr.io/ece4410j-pentagram/pentagram-backend
+```
+**Note:** If you need to initialize the database table structure, do not forget to run `python3 createDB.py` inside the container. It is not automatic.
+
+- Using Docker Compose (Production Build)
+Create a file called `docker-compose.yml`. Edit the file and input:
+```yaml
+version: '3.7'
+
+services:
+  pentagram:
+    image: ghcr.io/ece4410j-pentagram/pentagram-backend
+    env_file:
+      - secret.env
+    ports:
+      - 8000:8000
+```
+Run the service with:
+```bash
+docker compose up -d
+```
+**Note:** If you need to initialize the database table structure, do not forget to run `python3 createDB.py` inside the container. It is not automatic.
+
 
 ## Model and Engine
 
