@@ -5,7 +5,7 @@ The entire project consists of two parts: [frontend](https://github.com/ECE4410J
 ## Team Roster
 
 - Baichun Li: Contributed part of the frontend system (including the key management part). Worked on the entire backend system, designed the Postgres SQL table structure, and designed the entire API structure.
-- Che Chen:
+- Che Chen: Proposed initial frontend layout and workflow and visualized on Figma. Wrote draft version of message receiving frontend.
 - Pingbang Hu: Researched and implemented the *text2image Steganography algorithm* ([core](https://github.com/ECE4410J-Pentagram/Pentagram-Frontend/tree/main/app/src/main/java/cn/edu/sjtu/patrickli/cryptex/model/core)): Identifying the potential pitfall of the common [Image Steganography](https://github.com/aagarwal1012/Image-Steganography-Library-Android) library for Android and designing the improved *pseudo-randomized LSB* Embedding algorithm with RSA encryption.
 
   Proved the proposed *PR-LSB Embedding algorithm* is secure at the theoretical level, and analyzed various properties of which.
