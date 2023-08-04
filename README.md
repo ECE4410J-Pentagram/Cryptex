@@ -11,7 +11,7 @@ The entire project consists of two parts: [frontend](https://github.com/ECE4410J
   Proved the proposed *PR-LSB Embedding algorithm* is secure at the theoretical level, and analyzed various properties of which.
 - Jiajun Wang: 
 - Siwei Wang: Completed part of the codes for UI of Skeletal Demo. Contributed to project presentations and proposal. Led story map and workflow creation. Designed Figma interface. Presented Skeletal Demo and MVP Demo. Drafted 12 pages of the thesis.
-- Yiwen Yang: Implemented frontend message sending and sharing logic. Designed and implemented QR Code sharing and frontend friend invitation process. Designed and managed client-side database and secure key storage. Designed encryption and decryption key generation. Connected frontend to backend using REST API.
+- Yiwen Yang: Implemented naive steganography algorithm. Implemented frontend message sending and sharing logic. Designed and implemented QR Code sharing and frontend friend invitation process. Designed and managed client-side database and secure key storage. Designed encryption and decryption key generation. Connected frontend to backend using REST API.
 
 ### Challenges
 
