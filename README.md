@@ -142,7 +142,7 @@ The back-end data flow design is shown below.
 
 #### Cloudflare CDN
 
-The Cloudflare CDN is responsible for filtering out all the malicious requests, mostly DDoS and cache contents that might be helpful for further requests.
+The Cloudflare CDN is responsible for filtering out all the malicious requests, mostly DDoS and cache contents, that might be helpful for further requests.
 
 #### NginX Ingress
 
@@ -150,23 +150,23 @@ The NginX Ingress is designed to implement the TLS encryption.
 
 #### FastAPI Router
 
-The FastAPI builtin router parses all the request paths and called the corresponding functions to respond.
+The FastAPI built-in router parses all the request paths and calls the corresponding functions to respond.
 
 #### Login Manager
 
-The login manager manages the user credentials. It automatic generates authentication tokens and verifies the credentials. It looks up all the user information in the PostgresDB and stores the authentication tokens in the Redis.
+The login manager manages the user credentials. It automatically generates authentication tokens and verifies the credentials. It looks up all the user information in the PostgresDB and stores the authentication tokens in Redis.
 
 #### Other Renderers
 
-Other renderes implements other necessary functionalities. They typically looks up information in the PostgresDB.
+Other renderers implement other necessary functionalities. They typically look up information in the PostgresDB.
 
 #### Redis
 
-Redis is an open source in-memory database. It is designed for high throughput and low latency. It is popular for storing temporary data such as authentication tokens.
+Redis is an open-source in-memory database. It is designed for high throughput and low latency. It is popular for storing temporary data, such as authentication tokens.
 
 #### PostgresDB
 
-PostgresDB is an open source modern SQL database manager. We use it store permanent data such as user credentials, relationships and public key information.
+PostgresDB is an open-source modern SQL database manager. We use it to store permanent data such as user credentials, relationships, and public key information.
 
 ### Front End Data Flow Diagram
 
