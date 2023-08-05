@@ -172,11 +172,27 @@ PostgresDB is an open-source modern SQL database manager. We use it to store per
 
 ![Front End Data Flow](Figures/frontend-data-flow.png)
 
+#### Text Encrypter/Decrypter
+
+The *Text Encrypter/Decrypter* will encrypt/decrypt a string of plain text/cipher text with respect to the receiver's public key/private key.
+
+#### Shuffler
+
+The shuffler takes in a random seed and spits out a *non-repeating* sequence of integers.
+
 #### Image Encrypter/Decrypter
 
-The basic feature in the *Image Encrypter/Decrypter* block is to encrypt/decrypt a secret message into an image using the proposed *PR-LSB embedding algorithm*. It takes in three inputs, a secret message, an image, and the user you're sending the image (the receiver).
+The basic feature in the *Image Encrypter/Decrypter* blocks is to encrypt/decrypt an encrypted image (steg image) using the proposed *PR-LSB embedding algorithm*. It takes in two inputs: a steg image, the user you're sending the image (the receiver's *key alias*), and a random seed.
 
-We first encrypt the secret message to the ciphertext with the receiver's public key, then generate a pseudo-random sequence (the prefix *PR*). Then, we use the usual LSB embedding algorithm to encrypt the ciphertext to the image, where the order is with respect to the generated pseudo-random sequence. This design choice is to break the potential detectability of an encrypted image, where we provide more details and proofs in the Thesis.
+##### Encrypter
+
+Firstly, we generate the pseudo-random sequence (the prefix *PR*) from the shuffler, then we use the usual LSB embedding algorithm to embed the random seed *and* the cipher text into the image, where the order is with respect to the generated pseudo-random sequence.
+
+> This design choice is to break the potential detectability of an encrypted image, where we provide more details and proofs in the Thesis.
+
+##### Decrypter
+
+On the other hand, given a steg image, we first decode the random seed and get the corresponding pseudo-random sequence from the Shuffler, then we decode the steg image with respect to the order given by the pseudo-random sequence. This produces the cipher text for the plain text back.
 
 ## APIs and Controller
 
