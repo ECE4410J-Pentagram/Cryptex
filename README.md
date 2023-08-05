@@ -156,7 +156,11 @@ The back-end data flow design is shown below.
 
 ### Front End Data Flow Diagram
 
+#### Image Encrypter/Decrypter
 
+The basic feature in the *Image Encrypter/Decrypter* block is to encrypt/decrypt a secret message into an image using the proposed *PR-LSB embedding algorithm*. It takes in three inputs, a secret message, an image, and the user you're sending the image (the receiver).
+
+We first encrypt the secret message to the ciphertext with the receiver's public key, then generate a pseudo-random sequence (the prefix *PR*). Then, we use the usual LSB embedding algorithm to encrypt the ciphertext to the image, where the order is with respect to the generated pseudo-random sequence. This design choice is to break the potential detectability of an encrypted image, where we provide more details and proofs in the Thesis.
 
 ## APIs and Controller
 
