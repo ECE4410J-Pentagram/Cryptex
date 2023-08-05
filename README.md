@@ -37,7 +37,7 @@ class RequestStore {
 
 ### Backend
 
-We provide a default official server at `https://cryptex.software/api/` but you can also set up a private server if you want.
+We provide a default official server at `https://cryptex.software/api/`, but you can also set up a private server if you want.
 
 Please note our service depends on Redis and PostgresDB.
 
@@ -136,9 +136,27 @@ docker compose up -d
 
 ### Back End Data Flow Diagram
 
-The back end data flow design is shown below.
+The back-end data flow design is shown below.
 
 ![Back End Data Flow](back_end_data_flow.png)
+
+#### Cloudflare CDN
+
+#### NginX Ingress
+
+#### FastAPI Router
+
+#### Login Manager
+
+#### Other Renderers
+
+#### Redis
+
+#### PostgresDB
+
+### Front End Data Flow Diagram
+
+
 
 ## APIs and Controller
 
