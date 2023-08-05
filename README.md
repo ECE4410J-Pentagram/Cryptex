@@ -138,7 +138,7 @@ docker compose up -d
 
 The back-end data flow design is shown below.
 
-![Back End Data Flow](back_end_data_flow.png)
+![Back End Data Flow](Figures/backend-data-flow.png)
 
 #### Cloudflare CDN
 
@@ -170,7 +170,7 @@ PostgresDB is an open source modern SQL database manager. We use it store perman
 
 ### Front End Data Flow Diagram
 
-![Front End Data Flow](frontend-data-flow.png)
+![Front End Data Flow](Figures/frontend-data-flow.png)
 
 #### Image Encrypter/Decrypter
 
